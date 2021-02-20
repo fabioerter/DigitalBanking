@@ -2,7 +2,7 @@
 
 namespace DigitalBanking.Domain.Core.Interfaces.Repositories
 {
-    public interface IPersonSampleRepository : IRepository<PersonSample>
+    public interface IEstadoRepository : IRepository<Estado>
     {
     }
 }

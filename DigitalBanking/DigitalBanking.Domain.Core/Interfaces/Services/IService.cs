@@ -9,7 +9,7 @@ namespace DigitalBanking.Domain.Core.Interfaces.Services
     {
         void Delete(TEntity obj);
         IEnumerable<TEntity> GetAll();
-        TEntity GetById(Guid id);
+        TEntity GetById(int id);
         TEntity Insert(TEntity obj);
         TEntity Update(TEntity obj);
     }

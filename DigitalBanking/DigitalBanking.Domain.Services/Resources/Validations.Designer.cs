@@ -8,11 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DigitalBanking.Domain.Services.Resources
-{
+namespace DigitalBanking.Domain.Services.Resources {
     using System;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,103 +22,94 @@ namespace DigitalBanking.Domain.Services.Resources
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Validations
-    {
-
+    internal class Validations {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Validations()
-        {
+        internal Validations() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if (object.ReferenceEquals(resourceMan, null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DigitalBanking.Domain.Services.Resources.Validations", typeof(Validations).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Para atualizar, for favor informe o Id..
+        /// </summary>
+        internal static string IdRequired {
+            get {
+                return ResourceManager.GetString("IdRequired", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Por favor, informe a idade da pessoa..
         /// </summary>
-        internal static string PersonSampleAgeRequired
-        {
-            get
-            {
+        internal static string PersonSampleAgeRequired {
+            get {
                 return ResourceManager.GetString("PersonSampleAgeRequired", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Por favor, informe a data de nascimento da pessoa..
         /// </summary>
-        internal static string PersonSampleDateBirthRequired
-        {
-            get
-            {
+        internal static string PersonSampleDateBirthRequired {
+            get {
                 return ResourceManager.GetString("PersonSampleDateBirthRequired", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to O nome completo da pessoa não pode ter mais de 100 caracteres..
         /// </summary>
-        internal static string PersonSampleFullNameLength
-        {
-            get
-            {
+        internal static string PersonSampleFullNameLength {
+            get {
                 return ResourceManager.GetString("PersonSampleFullNameLength", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Por favor, informe o nome da pessoa..
         /// </summary>
-        internal static string PersonSampleFullNameRequired
-        {
-            get
-            {
+        internal static string PersonSampleFullNameRequired {
+            get {
                 return ResourceManager.GetString("PersonSampleFullNameRequired", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Para atualizar, for favor informe o Id da pessoa..
         /// </summary>
-        internal static string PersonSampleIdRequired
-        {
-            get
-            {
+        internal static string PersonSampleIdRequired {
+            get {
                 return ResourceManager.GetString("PersonSampleIdRequired", resourceCulture);
             }
         }

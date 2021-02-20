@@ -11,7 +11,7 @@ namespace DigitalBanking.Application.AutoMapper
     {
         public ViewModelToDomainMappingProfile()
         {
-            CreateMap<PersonSampleDto, PersonSample>();
+            CreateMap<FuncionarioDto, Funcionario>();
         }
     }
 }

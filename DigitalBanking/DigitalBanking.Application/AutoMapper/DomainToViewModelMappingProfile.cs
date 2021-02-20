@@ -8,7 +8,7 @@ namespace DigitalBanking.Application.AutoMapper
     {
         public DomainToViewModelMappingProfile()
         {
-            CreateMap<PersonSample, PersonSampleDto>();
+            CreateMap<Funcionario, FuncionarioDto>();
         }
     }
 }

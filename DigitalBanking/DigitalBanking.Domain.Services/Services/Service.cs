@@ -44,7 +44,7 @@ namespace DigitalBanking.Domain.Services.Services
             return Repository.GetAll();
         }
 
-        public virtual TEntity GetById(Guid id)
+        public virtual TEntity GetById(int id)
         {
             return Repository.GetById(id);
         }

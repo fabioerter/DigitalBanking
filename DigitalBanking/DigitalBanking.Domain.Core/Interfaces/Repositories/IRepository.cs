@@ -8,13 +8,13 @@ namespace DigitalBanking.Domain.Core.Interfaces.Repositories
     public interface IRepository<TEntity> : IDisposable where TEntity : class
     {
 
-        void Delete(Guid id);
+        void Delete(int id);
         void Delete(TEntity obj);
         void DeleteAsync(TEntity obj);
         void DeleteRange(ICollection<TEntity> t);
 
-        TEntity GetById(Guid id);
-        Task<TEntity> GetByIdAsync(Guid id);
+        TEntity GetById(int id);
+        Task<TEntity> GetByIdAsync(int id);
 
         TEntity Insert(TEntity obj);
         Task<TEntity> InsertAsync(TEntity obj);

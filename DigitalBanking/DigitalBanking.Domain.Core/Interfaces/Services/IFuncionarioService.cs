@@ -2,7 +2,7 @@
 
 namespace DigitalBanking.Domain.Core.Interfaces.Services
 {
-    public interface IPersonSampleService : IService<PersonSample>
+    public interface IFuncionarioService : IService<Funcionario>
     {
     }
 }

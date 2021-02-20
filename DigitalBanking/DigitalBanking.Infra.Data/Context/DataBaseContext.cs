@@ -16,7 +16,8 @@ namespace DigitalBanking.Infra.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new PersonSampleMap());
+            modelBuilder.ApplyConfiguration(new FuncionarioMap());
+            modelBuilder.ApplyConfiguration(new EstadoMap());
             base.OnModelCreating(modelBuilder);
         }
 

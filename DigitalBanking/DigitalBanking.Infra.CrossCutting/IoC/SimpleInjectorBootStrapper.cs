@@ -48,9 +48,9 @@ namespace DigitalBanking.Infra.CrossCutting.IoC
 
             container.Register<IMemoryCache>(() => new MemoryCache(new MemoryCacheOptions() { SizeLimit = 5000 }), Lifestyle.Singleton);
 
-            container.Register<IPersonSampleAppService, PersonSampleAppService>(Lifestyle.Scoped);
-            container.Register<IPersonSampleService, PersonSampleService>(Lifestyle.Scoped);
-            container.Register<IPersonSampleRepository, PersonSampleRepository>(Lifestyle.Scoped);
+            container.Register<IFuncionarioAppService, FuncionarioAppService>(Lifestyle.Scoped);
+            container.Register<IFuncionarioService, FuncionarioService>(Lifestyle.Scoped);
+            container.Register<IFuncionarioRepository, FuncionarioRepository>(Lifestyle.Scoped);
 
             var config = AutoMapperConfig.RegisterMappings();
             container.RegisterInstance<MapperConfiguration>(config);

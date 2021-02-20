@@ -1,6 +1,5 @@
 ﻿using DigitalBanking.Domain.Base;
 using DigitalBanking.Domain.Core.Interfaces.Repositories;
-using DigitalBanking.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,7 +20,7 @@ namespace DigitalBanking.Infra.Data.Repositories
             Connection = uow.Connection;
         }
 
-        public virtual void Delete(Guid id)
+        public virtual void Delete(int id)
         {
             var obj = Activator.CreateInstance<TEntity>();
             obj.Id = id;
@@ -45,11 +44,11 @@ namespace DigitalBanking.Infra.Data.Repositories
             Uow.Context.SaveChanges();
         }
 
-        public virtual TEntity GetById(Guid id)
+        public virtual TEntity GetById(int id)
         {
             return Uow.Context.Set<TEntity>().FirstOrDefault(o => o.Id == id);
         }
-        public virtual async Task<TEntity> GetByIdAsync(Guid id)
+        public virtual async Task<TEntity> GetByIdAsync(int id)
         {
             return await Uow.Context.Set<TEntity>().FirstOrDefaultAsync(o => o.Id == id);
         }

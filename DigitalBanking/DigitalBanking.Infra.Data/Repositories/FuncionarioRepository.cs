@@ -4,10 +4,10 @@ using DigitalBanking.Infra.Data.Context;
 
 namespace DigitalBanking.Infra.Data.Repositories
 {
-    public class PersonSampleRepository : Repository<PersonSample>, IPersonSampleRepository
+    public class FuncionarioRepository : Repository<Funcionario>, IFuncionarioRepository
     {
 
-        public PersonSampleRepository(IUnitOfWork context) : base(context)
+        public FuncionarioRepository(IUnitOfWork context) : base(context)
         {
         }
     }
