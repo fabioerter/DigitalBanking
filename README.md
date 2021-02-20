@@ -8,6 +8,12 @@ O DDD é uma abordagem de modelagem de software que segue um conjunto de prátic
 
 Seu objetivo é mostrar meus conhecimentos para a Digital Banking. Porém, como já utilizo essa arquitetura com o ASP.NET CORE, o fiz utilizando-o.
 
+Para atualizar o banco de dados ao utilizar a aplicação basta:
+
+1) alterar a connection string em appsettings.json e appsettings.Development.json;
+
+2) abrir o gerenciador de pacotes NUGET selecionar "4-Infra\4.1 - Data\DigitalBanking.Infra.Data" e executar o comando update-database;
+
 Para fins de avaliação segue meu trabalho feito para a UDEM (Universidad de Monterrey) no México com requisições AJAX e MVC conforme requerido nas especificações:  [Carregamento de arquivos UDEM](https://github.com/fabioerter/-AFCargaDocs).
 
 Qualquer dúvidas estou a disposição.
